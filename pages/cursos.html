@@ -1,0 +1,121 @@
+ <div  id="app" class="settings">
+  <main class="main-right">
+
+  
+
+    <section class="page-main main-right">
+      <div id="tab-container">
+      <form ng-submit="updateAlumno(alu)">
+        <div id="account-content" class="settings-content">
+
+          <button id="submit_button" type="submit" class="btn btn-green right" >Guardar cambios</button>
+          <!--mansaje de errores-->
+          <div id="confirmation-message" class="hidden save-message">Tus cambios han sido guardados.</div>
+          <div id="error-message" class="hidden error-message">Error</div>
+
+          <h1>Configuración de cuenta</h1>
+
+          <button  class="btn btn-blue left" ng-show="correcto">Edicion Correcta</button>
+          <hr>
+          <ul class="list-settings">
+            <li>
+              <label class="label">Codigo de Curso</label>
+              <div class="input">
+                <input style="width: 334px;" class="large" id="username"  name="username" type="text"  value="MA611" disabled>
+              </div>
+            </li>
+            <li>
+              <label class="label">Creditos</label>
+              <div class="input">
+                <input style="width: 334px;" class="large" id="Nombres"  name="username" type="number" value=3>
+              </div>
+            </li>
+               <li>
+              <label class="label">Horas de teoria</label>
+              <div class="input">
+                <input style="width: 334px;" class="large" id="Nombres"  name="username" type="text" value=4>
+              </div>
+            </li>
+               <li>
+              <label class="label"> Horas de practica</label>
+              <div class="input">
+                <input style="width: 334px;" class="large" id="Nombres" nname="username" type="text" value="2">
+              </div>
+            </li>
+            <li>
+              <label class="label">Horas de Laboratorio</label>
+              <div class="input">
+                <input style="width: 334px;" class="large" id="Nombres"  name="username" type="text" value="-">
+              </div>
+            </li>
+               <li>
+              <label class="label">Objetivo Generales</label>
+              <div class="input">
+                <textarea style="margin-bottom: 10px; width: 334px;"  class="large" id="Nombres"  name="username"   ></textarea>
+              </div>
+            </li>
+
+            <li>
+              <label class="label">Objetivos Especificos</label>
+              <div class="input">
+                 <textarea style="margin-bottom: 10px; width: 334px;" class="large" id="Nombres"  name="username" type="text"  ></textarea>
+              </div>
+            </li>
+     <label class="label">Bibliografia</label>
+              <div class="input">
+                <textarea style="margin-bottom: 10px; width: 334px;" class="large" id="Nombres"  name="username" type="textarea"  ></textarea>
+              </div><
+            </li>
+          
+           
+           
+
+            <li>
+              <label class="label">agregar curso de Requisito</label>
+              <div class="input">
+                <label class="blue-select no-focus smaller fixed-width">
+                   <select    required>
+                    
+                    <option  value="1">MA101</option>
+                    <option  value="1">MA102</option>
+                    <option  value="1">MA103</option>
+                    <option value="1">MA104</option>
+                    <option  value="1">MA105</option>
+                    <option  value="1">MA106</option>
+                  </select>
+                </label>
+              </div>
+              </li>
+               <table class="table">
+                <thead>
+                          <tr>
+                            <th>Curso</th>
+                            <th>Codigo</th>
+                            <th>Ciclo</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr >
+                            <td>Matematicas 2</td>
+                            <td>MA124</td>
+                            <td>2</td>
+                          </tr>
+                            <tr >
+                             <td>Matematicas Basicas 2</td>
+                            <td>MA123</td>
+                            <td>2</td>
+                          </tr>
+                         
+                         </tbody>
+            </table>
+          
+            
+            <button ng-show="correcto">cambios actualizados</button>
+          </ul>
+          </form>
+           
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
